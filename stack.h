@@ -25,7 +25,7 @@ int pop(StackPtr s) {
     free(t);
     return value;
   }
-  printf("Empty stack");
+  //printf("Empty stack");
   return 0;
 }
 
