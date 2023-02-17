@@ -16,10 +16,10 @@ void push(StackPtr s, int value) {
     s->size++;
   }
 }
-int pop(StackPtr s) {
+char pop(StackPtr s) {
   NodePtr t = s->top;
   if (s->size > 0) {
-    int value = t->data; //(*top)->data
+    char value = t->data; //(*top)->data
     s->top = t->nextPtr; //(*top)->nextPtr
     s->size--;
     free(t);
@@ -31,7 +31,7 @@ int pop(StackPtr s) {
 
 void pop_all(StackPtr s) {
   while (s->size>0) { //s->top
-    printf("%d\n",pop(s));
+   // printf("%d\n",pop(s));
   }
 }
 #endif
