@@ -30,8 +30,9 @@ char pop(StackPtr s) {
 }
 
 void pop_all(StackPtr s) {
-  while (s->size>0) { //s->top
+  while (s->size>0) 
+  pop(&s); //s->top
    // printf("%d\n",pop(s));
-  }
+  
 }
 #endif
